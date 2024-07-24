@@ -1,0 +1,30 @@
+[
+  {
+    "roleId_roles_name_121": "staff",
+    "name": "CEO",
+    "description_string_textarea": "Chief Executive Officer",
+    "abbr": "CEO",
+    "isDefault_boolean_boolean": false
+  },
+  {
+    "roleId_roles_name_121": "developer",
+    "name": "Tester",
+    "description_string_textarea": "Chief Testing Officer",
+    "abbr": "CTO",
+    "isDefault_boolean_boolean": false
+  },
+  {
+    "roleId_roles_name_121": "external",
+    "name": "Visitor",
+    "description_string_textarea": "Visitor",
+    "abbr": "VS",
+    "isDefault_boolean_boolean": true
+  },
+  {
+    "roleId_roles_name_121": "developer",
+    "name": "Developer",
+    "description_string_textarea": "Software Developer",
+    "abbr": "SD",
+    "isDefault_boolean_boolean": false
+  }
+]

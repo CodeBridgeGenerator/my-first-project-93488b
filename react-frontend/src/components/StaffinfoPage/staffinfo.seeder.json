@@ -1,0 +1,38 @@
+[
+  {
+    "empno": 8559,
+    "name": "MOHD HELMY BIN GHAZALEE",
+    "namenric": "MOHD HELMY BIN GHAZALEE",
+    "compcode": 1105,
+    "compname": "Code Bridge Sdn Bhd",
+    "deptcode": 2000,
+    "deptdesc": "Sales",
+    "sectcode": 2000900,
+    "sectdesc": "Apac Region",
+    "designation": "Director of Sales",
+    "email": "kana.sabaratnam@gmail.com",
+    "resign": "False",
+    "supervisor": "9000",
+    "datejoin": 1719129864400,
+    "empgroup": "06 ",
+    "empgradecode": "U1"
+  },
+  {
+    "empno": 8600,
+    "name": "MOHD FAHMY BIN GHAZALEE",
+    "namenric": "MOHD FAHMY BIN GHAZALEE",
+    "compcode": 1105,
+    "compname": "Code Bridge Sdn Bhd",
+    "deptcode": 2000,
+    "deptdesc": "Sales",
+    "sectcode": 2000901,
+    "sectdesc": "South Asia Region",
+    "designation": "Director of Sales",
+    "email": "appiahshut@gmail.com",
+    "resign": "False",
+    "supervisor": "9000",
+    "datejoin": 1719129864400,
+    "empgroup": "06 ",
+    "empgradecode": "U1"
+  }
+]

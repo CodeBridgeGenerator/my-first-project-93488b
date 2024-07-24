@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'RobotoMono';
+    src:
+        local('RobotoMono'),
+        url(./assets/fonts/RobotoMono-VariableFont_wght.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Praktika';
+    src:
+        local('Praktika'),
+        url(./assets/fonts/Praktika-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'MarlinGeo';
+    src:
+        local('MarlinGeo'),
+        url(./assets/fonts/MarlinGeo-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'MarlinGeo-Bold';
+    src:
+        local('MarlinGeo-Bold'),
+        url(./assets/fonts/MarlinGeo-Bold.otf) format('opentype');
+}
+
+.hover:hover {
+    cursor: pointer;
+}
+.zoom:hover {
+    transform: scale(102%);
+}
+
+.transform-delay {
+    transition: transform 0.1s;
+}
+
+.small-prime-tooltip {
+    transform: scale(70%);
+}
+
+.bord {
+    border: 1px solid red;
+}
+
+.my-shadow {
+    box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 7px 7px 8px -1px rgba(0, 0, 0, 0.2);
+}
+
+.hover-red:hover {
+    color: var(--red-400) !important;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.p-inputtext::placeholder {
+    color: var(--surface-400);
+}
+
+.no-effect-focus:focus,
+.no-focus-effect:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.bord {
+    border: 1px solid rgb(255, 5, 255);
+}

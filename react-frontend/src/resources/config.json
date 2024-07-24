@@ -1,0 +1,396 @@
+{
+  "projectName": "my-first-project",
+  "description": null,
+  "auth": "jwt",
+  "database": {
+    "pathToLogo": {
+      "s": "/assets/applications_logos/mongodb-s.png",
+      "l": "/assets/applications_logos/mongodb.png"
+    },
+    "appName": "mongodb-database",
+    "disabled": false,
+    "type": "database",
+    "name": "mongodb",
+    "label": "MongoDB",
+    "isOpenSource": true,
+    "databaseType": "mongodb"
+  },
+  "stack": [
+    {
+      "appName": "nodejs-backend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/nodejs-s.png",
+        "l": "/assets/applications_logos/nodejs.png"
+      },
+      "type": "backend",
+      "name": "nodejs",
+      "label": "Node.js Express Feathers.js"
+    },
+    {
+      "appName": "react-frontend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/react-s.png",
+        "l": "/assets/applications_logos/react.png"
+      },
+      "type": "frontend",
+      "name": "react",
+      "label": "React JavaScript"
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "users",
+      "databaseName": "users",
+      "displayName": "Users",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Name",
+          "min": 2,
+          "max": 100,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "email",
+          "type": "String",
+          "unique": true,
+          "lowercase": true,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Email",
+          "min": 5,
+          "max": 150,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "password",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": false,
+          "displayOnSingle": false,
+          "displayOnDataTable": false,
+          "creatable": true,
+          "editable": false,
+          "sortable": false,
+          "required": true,
+          "component": "p",
+          "label": "Password",
+          "min": 5,
+          "max": 300,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": true,
+      "seeder": [],
+      "skip": true,
+      "downloadable": true,
+      "uploadable": false,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "products",
+      "databaseName": "products",
+      "displayName": "Products",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "sku",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Sku",
+          "faker": {
+            "module": "datatype",
+            "subModule": "number",
+            "args": "1",
+            "skip": false,
+            "_id": "66a0681c59704f398a93490d"
+          },
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "default": null,
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "module": "datatype",
+            "subModule": "number",
+            "args": "1",
+            "skip": false,
+            "_id": "66a0681c59704f398a93490e"
+          },
+          "max": null,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "brand",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Brand",
+          "faker": {
+            "module": "datatype",
+            "subModule": "number",
+            "args": "1",
+            "skip": false,
+            "_id": "66a0681c59704f398a93490f"
+          },
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "price",
+          "type": "Number",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_number",
+          "label": "Price",
+          "faker": {
+            "module": "datatype",
+            "subModule": "number",
+            "args": "1",
+            "skip": false,
+            "_id": "66a0681c59704f398a934910"
+          },
+          "min": 0,
+          "max": 1000000,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": false,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    }
+  ]
+}

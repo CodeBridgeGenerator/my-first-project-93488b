@@ -1,0 +1,14 @@
+[
+  {
+    "countryCode": 60,
+    "operatorCode": 3,
+    "number": 3433456,
+    "type": "Land line"
+  },
+  {
+    "countryCode": 60,
+    "operatorCode": 3,
+    "number": 12112111,
+    "type": "Mobile"
+  }
+]

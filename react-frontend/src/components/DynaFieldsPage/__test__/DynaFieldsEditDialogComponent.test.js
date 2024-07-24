@@ -1,0 +1,21 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+
+import DynaFieldsEditDialogComponent from '../DynaFieldsEditDialogComponent';
+import { MemoryRouter } from 'react-router-dom';
+import '@testing-library/jest-dom';
+import { init } from '@rematch/core';
+import { Provider } from 'react-redux';
+import * as models from '../../../models';
+
+test('renders dynaFields edit dialog', async () => {
+    const store = init({ models });
+    render(
+        <Provider store={store}>
+            <MemoryRouter>
+                <DynaFieldsEditDialogComponent show={true} />
+            </MemoryRouter>
+        </Provider>
+    );
+    expect(screen.getByRole('dynaFields-edit-dialog-component')).toBeInTheDocument();
+});

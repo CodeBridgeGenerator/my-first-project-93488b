@@ -1,0 +1,20 @@
+[
+  {
+    "countryCode": 60,
+    "operatorCode": 3,
+    "number": 2345333,
+    "type": "Land line"
+  },
+  {
+    "countryCode": 60,
+    "operatorCode": 12,
+    "number": 2223344,
+    "type": "Mobile"
+  },
+  {
+    "countryCode": 65,
+    "operatorCode": 9,
+    "number": 32332332,
+    "type": "Fax"
+  }
+]

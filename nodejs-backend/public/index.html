@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>App Title</title>
+        <meta name="description" content="A FeathersJS server" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            html,
+            body {
+                font-family: 'Helvetica Neue', 'Helvetica', 'Arial',
+                    'sans-serif';
+                font-weight: 400;
+                font-size: 16px;
+                color: #2c3e50;
+            }
+
+            .center-text {
+                text-align: center;
+            }
+
+            main {
+                margin-top: 100px;
+                padding: 20px;
+            }
+
+            img.logo {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                margin-bottom: 130px;
+            }
+
+            h2 {
+                font-size: 2em;
+                font-weight: 100;
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+            }
+
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 20px;
+            }
+
+            footer p {
+                font-weight: 300;
+                font-size: 1em;
+            }
+
+            a {
+                color: #3cf;
+                text-decoration: none;
+            }
+
+            a:hover,
+            a:focus {
+                color: #3cf;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <img
+                class="logo"
+                src="data:image/png;base64,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"
+                alt="CodeBridge Logo"
+            />
+            <div><h2>Code Bridge Powered - Nodejs Server</h2></div>
+            <footer>
+                <p class="center-text">
+                    For more information on CodeBridge see
+                    <a
+                        href="https://codebridge.my/"
+                        title="Code Bridge Documentation"
+                        target="blank"
+                        >www.codebridge.my</a
+                    >.
+                </p>
+            </footer>
+        </main>
+    </body>
+</html>

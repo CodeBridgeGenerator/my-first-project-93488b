@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Staff",
+    "description_string_textarea": "Internal users of the company",
+    "isDefault_boolean_boolean": false,
+    "isDefault": false,
+    "description": "Internal Users of the company"
+  },
+  {
+    "name": "External",
+    "description_string_textarea": "External users of the company",
+    "isDefault_boolean_boolean": true,
+    "isDefault": true,
+    "description": "External user that have limited access to the system"
+  },
+  {
+    "name": "Developer",
+    "description_string_textarea": "Software Developer of the application",
+    "isDefault_boolean_boolean": false,
+    "isDefault": false,
+    "description": "For the developer to manage the bugs and maintenance"
+  },
+  {
+    "name": "Super",
+    "description_string_textarea": "Super user of the application",
+    "isDefault_boolean_boolean": false,
+    "isDefault": false,
+    "description": "Super user that is capable of all functions and features."
+  },
+  {
+    "name": "Admin",
+    "description_string_textarea": "Administrator of the application",
+    "isDefault_boolean_boolean": false,
+    "isDefault": false,
+    "description": "Internal staff user that is responsible for first level support and system maintenance."
+  }
+]

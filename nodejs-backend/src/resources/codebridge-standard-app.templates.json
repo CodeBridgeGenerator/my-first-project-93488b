@@ -1,0 +1,90 @@
+[
+  {
+    "_id": {
+      "$oid": "66921e06faf02dc2da54c789"
+    },
+    "name": "onDynaLoader",
+    "subject": "Data Loader Completed",
+    "body": "The Job Id : {{id}}",
+    "variables": ["id"],
+    "createdBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "updatedBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "createdAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "updatedAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66988d49dc5356e8e6a4c59f"
+    },
+    "name": "onCodeVerify",
+    "subject": "<p>Email Verification Code</p>",
+    "body": "<p>Hi {{name}},</p><p><br></p><p><br></p><p>Your email verification is required.</p><p><br></p><p><br></p><p><strong>The Verification Code : {{code}}</strong></p><p><br></p><p><strong><span class=\"ql-cursor\">﻿</span></strong></p><p><br></p><p>This is an automated email.</p>",
+    "variables": ["id"],
+    "createdBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "updatedBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "createdAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "updatedAt": {
+      "$date": "2024-07-20T05:54:01.959Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "66988d5cdc5356e8e6a4c5a0"
+    },
+    "name": "onUserConfirmation",
+    "subject": "Data Loader Completed",
+    "body": "The Job Id : {{id}}",
+    "variables": ["id"],
+    "createdBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "updatedBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "createdAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "updatedAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669c7da40583d201090f0dd1"
+    },
+    "name": "onWelcomeEmail",
+    "subject": "Data Loader Completed",
+    "body": "The Job Id : {{id}}",
+    "variables": ["id"],
+    "createdBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "updatedBy": {
+      "$oid": "66626d1d8fd3e22171286041"
+    },
+    "createdAt": {
+      "$date": "2024-07-13T06:26:14.213Z"
+    },
+    "updatedAt": {
+      "$date": "2024-07-21T03:33:25.371Z"
+    },
+    "__v": 0
+  }
+]

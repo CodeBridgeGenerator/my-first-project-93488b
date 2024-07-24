@@ -1,0 +1,72 @@
+{
+    "name": "react_18_app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@faker-js/faker": "^7.6.0",
+        "@feathersjs/authentication-client": "^4.5.11",
+        "@feathersjs/feathers": "^4.5.11",
+        "@feathersjs/rest-client": "^4.5.11",
+        "@rematch/core": "^2.2.0",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "axios": "^1.5.0",
+        "chart.js": "^4.4.3",
+        "classnames": "^2.2.6",
+        "env-cmd": "^10.1.0",
+        "firebase": "^10.9.0",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.4",
+        "prettier": "^3.0.3",
+        "primeflex": "^3.3.1",
+        "primeicons": "^7.0.0",
+        "primereact": "^10.6.3",
+        "prismjs": "^1.29.0",
+        "quill": "^1.3.7",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.1.2",
+        "react-router-dom": "^6.15.0",
+        "react-scripts": "5.0.1",
+        "redux": "^5.0.1",
+        "sass": "^1.66.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!my-library-dir)/'",
+        "eject": "react-scripts eject",
+        "environment": "npm run --silent cmd && npm install --quiet --no-progress && npm run welcome && npm run format",
+        "format": "prettier ./src/components --write ",
+        "format:check": "prettier ./src/components --check \"*/.{js,ts,d.ts}\"",
+        "cmd": "(dir 2>&1 *`|npm run moveCMD);&<# rem #>npm run movePS",
+        "moveCMD": "if exist .env_example rename .env_example .env",
+        "movePS": "if Test-Path -Path .env_example 'Rename-Item -Path .\\.env_example .\\.env'",
+        "build:sit": "set \"GENERATE_SOURCEMAP=false\" && env-cmd -f .env_sit react-scripts build",
+        "build:stg": "set \"GENERATE_SOURCEMAP=false\" && env-cmd -f .env_stg react-scripts build",
+        "build:test": "set \"GENERATE_SOURCEMAP=false\" && env-cmd -f .env_test react-scripts build",
+        "build:prod": "set \"GENERATE_SOURCEMAP=false\" && env-cmd -f .env_prod react-scripts build",
+        "welcome": "\"echo \"Welcome to CodeBridge Ai Code Generator\" \"",
+        "launch": "npm run --silent cmd && npm install --quiet --no-progress && npm run welcome && npm run format && npm run start"
+    },
+    "eslintConfig": {
+        "extends": []
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+        "react-error-overlay": "^6.0.9"
+    }
+}

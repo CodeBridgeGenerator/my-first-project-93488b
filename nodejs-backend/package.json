@@ -1,0 +1,87 @@
+{
+    "name": "nodejs-backend",
+    "description": "",
+    "version": "0.0.0",
+    "homepage": "",
+    "private": true,
+    "main": "src",
+    "keywords": [
+        "feathers"
+    ],
+    "author": {
+        "name": "Farehan",
+        "email": "farehannumar@gmail.com"
+    },
+    "contributors": [],
+    "bugs": {},
+    "directories": {
+        "lib": "src",
+        "test": "test/",
+        "config": "config/"
+    },
+    "engines": {
+        "node": "^21.0.0",
+        "npm": ">= 10.0.0"
+    },
+    "scripts": {
+        "dev": "nodemon src/",
+        "start": "node src/",
+        "test": "npm run lint && npm run mocha",
+        "lint": "eslint src/. test/. --config .eslintrc.json --fix",
+        "format": "prettier ./src --write ",
+        "format:check": "prettier ./src --check \"*/.{js,ts,d.ts}\"",
+        "mongodump": "mongodump --uri=mongodb://localhost:27017 -d nodejs-backend ",
+        "mongorestore": "mongorestore  dump/",
+        "cmd": "(dir 2>&1 *`|npm run moveCMD);&<# rem #>npm run movePS",
+        "moveCMD": "if exist .env_example ren .env_example .env",
+        "movePS": "if Test-Path -Path .env_example 'Rename-Item -Path .\\.env_example .\\.env'",
+        "mocha": "mocha test/ --recursive --exit -r dotenv/config",
+        "welcome": "\"echo \"Welcome to CodeBridge Ai Code Generator\" \"",
+        "launch:dev": "npm run cmd && npm install && npm run welcome && npm run dev",
+        "launch": "npm run --silent cmd && npm install --quiet --no-progress && npm run welcome && npm run format && npm run start"
+    },
+    "standard": {
+        "env": [
+            "mocha"
+        ],
+        "ignore": []
+    },
+    "dependencies": {
+        "@feathersjs/authentication": "^4.5.11",
+        "@feathersjs/authentication-local": "^4.5.11",
+        "@feathersjs/authentication-oauth": "^4.5.11",
+        "@feathersjs/configuration": "^4.5.11",
+        "@feathersjs/errors": "^4.5.11",
+        "@feathersjs/express": "^4.5.11",
+        "@feathersjs/feathers": "^4.5.11",
+        "@feathersjs/socketio": "^4.5.11",
+        "@feathersjs/transport-commons": "^4.5.11",
+        "axios": "^0.27.2",
+        "bull": "^4.13.1",
+        "bullmq": "^5.8.2",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.2",
+        "feathers-mongoose": "^8.5.1",
+        "feathers-hooks-common": "^6.1.3",
+        "helmet": "^4.6.0",
+        "ioredis": "^5.4.1",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.4",
+        "mongodb-core": "^3.2.7",
+        "mongoose": "^6.12.0",
+        "multer": "^1.4.5-lts.1",
+        "node-schedule": "^2.1.0",
+        "nodemailer": "^6.7.8",
+        "prettier": "^3.0.3",
+        "python-shell": "^3.0.1",
+        "redis": "^4.6.14",
+        "serve-favicon": "^2.5.0",
+        "winston": "^3.8.2"
+    },
+    "devDependencies": {
+        "eslint": "^7.32.0",
+        "mocha": "^8.4.0",
+        "nodemon": "^2.0.20"
+    }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "userId": "Kana Sabaratnam",
+    "serviceId_string_text": "users",
+    "read_boolean_boolean": true,
+    "readAll_boolean_boolean": true,
+    "updateAll_boolean_boolean": true,
+    "updateOwn_boolean_boolean": true,
+    "deleteAll_boolean_boolean": true,
+    "deleteOwn_boolean_boolean": true
+  }
+]

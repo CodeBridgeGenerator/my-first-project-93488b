@@ -1,0 +1,21 @@
+[
+  {
+    "sessionId": 1,
+    "chatAiId": 1,
+    "configId": 1,
+    "prompt": "asdfasdf",
+    "ref_docs": "[]",
+    "response_text": "Relevant quotes:\\n\\n[1]",
+    "system_id": "msg_01Uebe3L5WL6KNmg7yx3BjNL",
+    "type": "message",
+    "role": "assistant",
+    "model": "claude-3-haiku-200k-20240307",
+    "stop_reason": "end_turn",
+    "stop_sequence": "null",
+    "input_tokens": 3,
+    "output_tokens": 3,
+    "cost": 3,
+    "status": true,
+    "error": "asdfasdfasdf"
+  }
+]
